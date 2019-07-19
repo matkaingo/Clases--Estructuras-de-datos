@@ -1,0 +1,105 @@
+
+
+  ADT                                               Clase
+Valor ---------------------------------     var instancia
+                                                  
+operaciones ----------------------------   Metodos
+
+--------------------------------------------------------------------
+
+Ej:
+
+  ADT Matriz
+
+  Operaciones
+  suma
+  resta
+  determinante
+      
+      |
+      |
+      v
+  -Definicion ADT
+  
+  
+  
+  Implementacion:
+  
+  Class Matriz{
+  
+    private int filas;
+    private int columnas
+    private double [][] matriz;
+    
+ public Matriz sumar(Matriz b){...}
+ 
+ public double determinante(){...}
+ --------------------------------------------------------------------
+ 
+  Roles:
+  Implementador del ADT: REsponsable de la clase que implementa el adt, define sus variables, métodos, pruebas, asegurar encapsulamiento.
+  
+  Modelo de cristall/transparente
+  
+  Cliente del ADT: Desarrollador que hace uso del ADT. En principio solo necesita conocer su interfaz publica, No necesita representacion interna
+  ni la forma como se implementan las operaciones.
+  
+  //El conjunto de operaciones con las que trabaja el cliente se denomina interfaz
+  --------------------------------------------------------------------
+  
+  Las clases en POO pueden tener elementos adicionales, que no hacen parte del ADT:
+  
+  -Elementos Estaticos:
+        Variables estaticas
+              constantes
+              Comunes a todas las instancias, no requieren tener una instancia
+              Singleton: Solo se puede crear una instancia del objeto.
+        Métodos estaticos
+                no asociados a la instancia de la clase
+                Funciones auxiliares que dependen de tener instancias.
+                Singleton
+                Funciones utilitarias
+                Main
+                Pruebas
+                
+       Existen clases que solo contienen elementos estaticos
+       
+                                      ---
+                                         |
+            java.long.Math               |  Son bibliotecas de funciones (No se instancia)
+                                         |
+                                      ---   
+  
+  
+  --------------------------------------------------------------------
+  
+  Uso del metodo main:
+    Punto de entrada del programa
+    Se pueden tener metodos main en cada una de las clases que componen un programa
+    
+    ej : 
+        
+          java          clase.que.contiene.main
+          
+         Un uso de tener mains en cada clase es utilizarlos para pruebas unitarias que se utilizan para comprobar  el funcionamiento de
+         operaciones/algoritmos en una clase.
+         
+         Ejemplo de implementacion de Punto2D
+         
+         -assert
+         
+         -toString():  (Represntracion textual)
+         
+         -Equals() ------>  Boolean
+         
+         -Condiciones por implementacion del equals (Comprueba si deos objetos son iguales):
+              - equal con null debe ser un false ----> Se hace condicianal if(p==null) return false; (Dentro del Boolean)
+              -Si el tipo de argumento es distinto debe ser false
+              -Comparar los valores de los ADT
+              -Debe ser relación de equivalencia  --> Reflexiva simetrica y transitiva
+         
+         
+         
+         
+   
+         
