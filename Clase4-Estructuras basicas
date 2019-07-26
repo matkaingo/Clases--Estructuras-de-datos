@@ -1,0 +1,26 @@
+Bag, Stack, Queue
+
+constructor
+
+Agregar : void add(Item i), void push(Item i),  void enQueue(Item i)
+
+Quitar : -----------------. Item pop() , Item dequeue()
+
+Tamaño de la coleccion: int size(), int size(), int size()
+
+
+Esta vacia?: boolean isEmpty()
+
+
+Tipos genericos.
+
+-Iteracion sobre colecciones : Unainterfaz que define unos metodos con los cuales se pueda implementar la iteracion de forma seguida.
+
+interface Iterable T<>{
+          Iterator<T> iterator();
+}
+
+interface Iterator<T> {
+    boolean hasNext();
+    T next();
+}
