@@ -1,0 +1,63 @@
+-Lista enlazada
+
+Objetos Nodo
+
+          nodo
+          Item itme
+          Nodo sig
+          
+Class Coleccion<Item> {
+  public class Nodo {
+  
+    Item item;
+    Nodo sig;
+  
+  }
+  
+  private Nodo primer = null;
+}
+
+Agregar Nodo
+
+  primero = new Nodo(),
+  primero.item = x;
+  primero.sig = null;
+  
+  Nodo tmp = new Nodo();
+  tmp.item =x1;
+  tmp.sig = primero
+  primero = tmp;
+  
+  
+ Borrar Nodos
+ 
+ Borrar primer nodo:
+ if(primero!=null)
+  primero = primero.sig;
+  
+Borrar un nodo intermedio de la lista
+
+  Rcorrido de una lista
+  
+  for(Nodo i = primero; i!=null; i = i.sig){
+      
+      StdOut.println(i.item);
+    }
+    
+ Borrar nodo arbitrario
+ 
+ Nodo antecesor == null;
+ 
+ for(Nodo i = primero; i!=null; i = i.sig){
+      
+        if(i  ==nodo) break;
+     antecesor = i;
+     
+    }
+    if(antecesor == null){
+    //Borrar primero
+    }
+    else{
+      antecesor.sig = nodo. sig
+ }
+  
