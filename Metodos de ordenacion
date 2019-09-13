@@ -1,0 +1,30 @@
+1. Ordenacion por seleccion
+    Comparaciones  --  N^(1/2)    |
+                                  |- Para todos los casos
+    Intercambios  -- N            |
+
+2. Ordenacion por inserción (in-situ)
+    Se iteraa sobre los elementos del arreglo empezando por pos = 1.
+    Se compara con sus predecesores.
+    Y se intercambia si es menor
+    
+    
+    Ejemplo:
+    
+      Void sort(Comparable[] a) {
+      
+          int N = a.length;
+          
+          for(int i=1; i<N;i++){
+            for(int j = i ; j>0 && less(a[j],a[j-1]) ; j--){
+                exch(a,j,j-1)
+            }
+          }
+        }
+        
+DEPENDIENDO DE LOS VALORES DE ENTRADA, EL NUMERO DE COMP E INTER DEL CICLO PUEDE VARIAR SIGNIFICATIVA/
+
+PEOR CASO = sI LA ENTRADA ESTA EN ORDEN DESCENDIENTE EL NÚMERO DE REPETICIONES DEL CICLO INTERNO ES MAYOR DEL POSIBLE
+
+      #EXCH  SUM(N-1, I =1)(SUM(I, J= 1)1)
+              SUM(N-1, I =1)I  --> (N-1)(N)/2   -- (N^2)/2
